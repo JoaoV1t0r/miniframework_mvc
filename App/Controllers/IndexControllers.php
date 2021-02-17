@@ -7,8 +7,9 @@ use MF\Model\Container;
 
 class IndexControllers extends Action{
 	
-	public function index(){
-
+	public function index()
+	{
+		//Renderização da index
 		$this->render('index');
 	}
 
