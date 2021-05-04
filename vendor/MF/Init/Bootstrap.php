@@ -30,8 +30,12 @@ abstract class Bootstrap {
 				$action = $route['action'];
 
 				$controller->$action();
+				return;
 			}
 		}
+		//Redireciona para a home caso não exista a rota
+		header('Location: /');
+		return;
 	}
 
 	protected function getUrl() {
